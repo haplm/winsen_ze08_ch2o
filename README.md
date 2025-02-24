@@ -8,3 +8,5 @@ How to use it:
 1. The component needs to reside inside the ESPHome configuration directory (where you have your YAML definitions for your ESPHome devices). In my case, I have created a new directory `components`, where I have placed the directory `ze08_ch2o` (and its content). Full path is then `config/esphome/components/ze08_ch2o`
 2. Insert the snippet in `sample_config.yaml` into your YAML definition, and adapt as needed
 3. Install the YAML (ie. compile everything), hopefully there are no issues
+
+If anyone has the skill to adapt this into a regular ESPHome component, please feel free to do it
