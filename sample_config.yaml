@@ -1,0 +1,20 @@
+uart:
+  - id: uart_ze08
+    rx_pin: GPIO17
+    tx_pin: GPIO16
+    baud_rate: 9600
+
+external_components:
+  - source: 
+      type: local
+      path: components # this is path to the directory where the "ze08_ch2o" is located within "config/esphome"
+      # in my case, it is "config/esphome/components/ze08_ch2o"
+
+ze08_ch2o:
+  uart_id: uart_ze08
+  update_interval: 5s
+
+sensor:
+  - platform: ze08_ch2o
+    formaldehyde:
+      name: "Formaldehyde sensor"
